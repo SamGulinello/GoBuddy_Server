@@ -4,13 +4,15 @@ import os
 
 from controller.image_handler import image_handler
 
-# Creat Necessary Objects
+# Create Necessary Objects
 application = Flask(__name__)
 
+# Base Endpoint
 @application.route('/', methods=['POST', 'GET'])
 def hello_world():
     return render_template('home.html')
 
+# Image Detection Endpoint
 @application.route('/image', methods=['POST', 'GET'])
 def object_detect():
     if request.method == 'POST':
