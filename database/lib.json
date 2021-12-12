@@ -1,0 +1,20 @@
+{
+    "columbus" : [
+        {
+            "Title" : "Christopher Columbus Monument",
+            "Description" : "A statue of Christopher Columbus was installed in Christopher Columbus Waterfront Park, in Boston's North End, in the U.S. state of Massachusetts. On June 11, 2020,[2] the statue was removed for an undisclosed period after it was decapitated by protestors on the evening of June 9, 2020.",
+            "Latitude" : "42.3613",
+            "Longitude" : "71.0512"
+        }
+    ],
+    
+    "northChurch" : [
+        {
+            "Title" : "Old North Church",
+            "Description" : "Old North Church (officially, Christ Church in the City of Boston), at 193 Salem Street, in the North End, Boston, is the location from which the famous '[One if by land, two if by sea' signal is said to have been sent. This phrase is related to Paul Revere's midnight ride of April 18, 1775, which preceded the Battles of Lexington and Concord during the American Revolution.",
+            "Latitude" : "42.3663",
+            "Longitude" : "71.0544"
+        }
+    ]
+}
+    

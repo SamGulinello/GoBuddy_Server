@@ -1,13 +1,11 @@
 # Import Necessary Libraries
 from flask import Flask, request, render_template
-import torch
-import base64
 import os
 
+from controller.image_handler import image_handler
 
 # Creat Necessary Objects
 application = Flask(__name__)
-model = torch.hub.load('yolov5', 'custom', path='yolov5/runs/train/exp11/weights/best.pt', source='local')
 
 @application.route('/', methods=['POST', 'GET'])
 def hello_world():
@@ -16,14 +14,15 @@ def hello_world():
 @application.route('/image', methods=['POST', 'GET'])
 def object_detect():
     if request.method == 'POST':
+
         # Get Image From Web Request
         data = request.files
         file = data['photo']
         filePath = 'static/' + file.filename
         file.save(os.path.join(filePath))
-        
-        # Perform the Object Recognition
-        results = model(filePath)
+
+        # Perform Object Detection
+        results = image_handler(filePath)
         results.save('static/')
 
         return render_template('results.html', file = file.filename)
