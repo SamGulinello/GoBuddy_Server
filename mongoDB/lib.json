@@ -1,0 +1,36 @@
+[
+
+    {
+        "Name" : "columbus",
+        "Title" : "Christopher Columbus Monument",
+        "Description" : "A statue of Christopher Columbus was installed in Christopher Columbus Waterfront Park, in Boston's North End, in the U.S. state of Massachusetts. On June 11, 2020,[2] the statue was removed for an undisclosed period after it was decapitated by protestors on the evening of June 9, 2020.",
+        "Latitude" : "42.3613",
+        "Longitude" : "71.0512",
+        "ImagePath" : "static/images/Columbus.jpg"
+    },
+    {
+        "Name" : "north Church",
+        "Title" : "Old North Church",
+        "Description" : "Old North Church (officially, Christ Church in the City of Boston), at 193 Salem Street, in the North End, Boston, is the location from which the famous '[One if by land, two if by sea' signal is said to have been sent. This phrase is related to Paul Revere's midnight ride of April 18, 1775, which preceded the Battles of Lexington and Concord during the American Revolution.",
+        "Latitude" : "42.3663",
+        "Longitude" : "71.0544",
+        "ImagePath" : "static/images/OldNorthChurch.jpg"
+    },
+    {
+        "Name" : "constitution",
+        "Title" : "The USS Constitution",
+        "Description" : "USS Constitution, also known as Old Ironsides, is a three-masted wooden-hulled heavy frigate of the United States Navy. She is the world's oldest ship of any type still afloat.[Note 1] She was launched in 1797, one of six original frigates authorized for construction by the Naval Act of 1794 and the third constructed. The name 'Constitution' was among ten names submitted to President George Washington by Secretary of War Timothy Pickering in March of 1795 for the frigates that were to be constructed.[10][11] Joshua Humphreys designed the frigates to be the young Navy's capital ships, and so Constitution and her sister ships were larger and more heavily armed and built than standard frigates of the period. She was built at Edmund Hartt's shipyard in the North End of Boston, Massachusetts. Her first duties were to provide protection for American merchant shipping during the Quasi-War with France and to defeat the Barbary pirates in the First Barbary War.",
+        "Latitude" : "42.3725",
+        "Longitude" : "71.0566",
+        "ImagePath" : "static/images/Constitution.jpg"
+    },
+    {
+        "Name" : "state house",
+        "Title" : "The Old State House",
+        "Description" : "The Old State House is a historic building in Boston, Massachusetts. Built in 1713, it was the seat of the Massachusetts General Court until 1798. It is located at the intersection of Washington and State Streets, and is one of the oldest public buildings in the United States.[3] One of the landmarks on Boston's Freedom Trail, it is the oldest surviving public building in Boston, and now serves as a history museum that, through 2019, was operated by the Bostonian Society until January 2020. On January 1, 2020, the Bostonian Society merged with the Old South Association in Boston to form Revolutionary Spaces.[4] The Old State House was designated a National Historic Landmark in 1960 and a Boston Landmark by the Boston Landmarks Commission in 1994.",
+        "Latitude" : "42.3587",
+        "Longitude" : "71.0575",
+        "ImagePath" : "static/images/OldStateHouse.jpg"
+    }
+]
+    

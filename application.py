@@ -2,10 +2,12 @@
 from flask import Flask, request, render_template
 import os
 
-from controller.image_handler import image_handler
+from controller.image_handler import perform_detection, get_class
+from controller.db_handler import mongoDB
 
 # Create Necessary Objects
 application = Flask(__name__)
+db = mongoDB()
 
 # Base Endpoint
 @application.route('/', methods=['POST', 'GET'])
@@ -24,10 +26,14 @@ def object_detect():
         file.save(os.path.join(filePath))
 
         # Perform Object Detection
-        results = image_handler(filePath)
-        results.save('static/')
+        results = perform_detection(filePath)
 
-        return render_template('results.html', file = file.filename)
+        # Get object class
+        obj = get_class(results)
+        print("OBJECT-> " + obj)
+        id =  db.get_id(obj)
+
+        return render_template('results.html', ImgPath = db.get_imgPath(id), Title = db.get_title(id), Description = db.get_description(id))
     
     else:
          return 'Please access endpoint with POST'
